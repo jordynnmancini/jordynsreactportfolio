@@ -1,13 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "./style.css";
 
-function NavTabs() {
-  // We'll go into the Hooks API later, for now, we are just using some code
-  // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
-  // This allows the component to check the route any time the user uses a link to navigate.
+function Header() {
+  
   const location = useLocation();
 
-  return (
+  return ( <div className="header">
+  <h1 className="title">Jordyn Mancini</h1>
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <Link to="/" className={location.pathname === "/" ? "nav-link active" : "nav-link"}>
@@ -25,9 +25,9 @@ function NavTabs() {
       <li className="nav-item">
         <Link
           to="/blog"
-          className={location.pathname === "/blog" ? "nav-link active" : "nav-link"}
+          className={location.pathname === "/projects" ? "nav-link active" : "nav-link"}
         >
-          Blog
+          Projects
         </Link>
       </li>
       <li className="nav-item">
@@ -38,16 +38,9 @@ function NavTabs() {
           Contact
         </Link>
       </li>
-      <li className="nav-item">
-        <Link
-          to="/contact/learn"
-          className={location.pathname === "/contact/learn" ? "nav-link active" : "nav-link"}
-        >
-          Learn
-        </Link>
-      </li>
     </ul>
+    </div>
   );
 }
 
-export default NavTabs;
+export default Header;
