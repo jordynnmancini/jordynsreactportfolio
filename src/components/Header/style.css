@@ -1,8 +1,17 @@
 .header {
-    margin-top: 10px; 
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../../assets/header.jpg');
+    background-size: 1200px 500px;  
+    background-repeat: no-repeat;
+    padding: 30px; 
 }
 .title {
     text-align: center;
+    padding: 10px; 
+    color: #242526;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+
 }
 
 .nav {
@@ -10,3 +19,8 @@
     justify-content: center;
 }
 
+.nav-tabs .nav-link:not(.active) {
+    color: #242526;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
+}
