@@ -1,7 +1,7 @@
 .header {
     font-family: 'Montserrat', sans-serif;
     background-image: url('../../assets/header.jpg');
-    background-size: 1200px 500px;  
+    background-size: 100% 500px;  
     background-repeat: no-repeat;
     padding: 30px; 
 }
@@ -10,8 +10,6 @@
     padding: 10px; 
     color: #242526;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-
-
 }
 
 .nav {
@@ -22,5 +20,11 @@
 .nav-tabs .nav-link:not(.active) {
     color: #242526;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
 
 }
